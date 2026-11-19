@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | MoveToALL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#conteudo" class="skip-link">
+        Pular para conteúdo principal</a>
+    <header>
+
+        <h1>MoveToALL</h1>
+        
+        <nav aria-label="Menu">
+            <a href="index.html">Início</a>
+            <a href="esportes.html">Esportes</a>
+            <a href="gym.html">Academias</a>
+            <a href="atletas.html">Atletas</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="referencias.html">Referências</a>
+        </nav>
+</header>
+    <main id="conteudo" tabindex="-1">
+        <section id="quiz">
+            <h2>Quiz MoveToALL</h2>
+            <p>Teste seus conhecimentos sobre acessibilidade,
+                esportes adaptados e inclusão!</p>
+
+            <div class="quiz-container">
+                <p id="question_number">
+                    Pergunta 1 de 10</p>
+                
+                <h3 id="question" tabindex="-1"></h3>
+                <div id="alternativas">
+                </div>
+                
+                 <p id="answer" role="status" aria-live="polite"></p>
+                <button id="next" onclick="nextQuestion()" style="display: none;">
+                    Próxima pergunta
+                </button></div>
+
+            <div id="result" style="display: none;">
+
+                <h2 id="result-title" tabindex="-1">Resultado Final</h2>
+                <p id="points"></p>
+                <button onclick="restartQuiz()">
+                    Refazer Quiz
+                </button></div>
+        </section>
+    </main>
+    <footer>
+       <p>MoveToALL - Projeto acadêmico de Engenharia de Software.</p>
+         <p>Desenvolvido por Ana Clara Leite - 2026.</p>
+    </footer>
+    <script src="quiz.js"></script>
+
+</body>
+</html>
